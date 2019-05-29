@@ -8,39 +8,43 @@ return
 /*
   This script will contain two methods for changing vst presets/patches.
   The point is to be able to quickly audition presets.
+  The plugin MUST have buttons to change presets
   
   This script CAN be run by itself
   If you wish to use these in your script put them after autoexec section of ahk file
   
-  Both methods require the vst gui to be open and active on forground
+  Both methods require the vst gui to be open and active on forground 
+  Both methods require the name of the plugin - (window spy)
   Both methods use the x, y coordinates of the patch change buttons on plugin (window spy)
-    These coordinates are from the plugin window and are accurate on my system YMMV..
+     These coordinates are from the plugin window and are accurate on my system YMMV...
   Both methods re-use the left and right arrow keys as hotkeys for all plugins patch/preset changes
   The arrow keys are ONLY hotkeys when the plugin is open and the ACTIVE window
+  I use both methods in my script
 */  
 
 ;------------------------------------ Method 1 -----------------------------------------  
 	
-  This method will move the mouse to location then click
-	ALL Arturia plugin WINDOWS NEED TO BE AT 90% ZOOM if you use these x,y coords
+; This method works with all plugins that have buttons to change presets
+; This method will move the mouse to location then click
+; ALL Arturia plugin WINDOWS NEED TO BE AT 90% ZOOM if you use these x,y coords
+; You are welcome to find comfortable zoom level - then identify your own x,y coords and replace them in hotkey definition
 
-#IfWinActive Mini V3 ;
-LEFT:: send {click, 730, 60}      ; back patch
-right::send {click, 780, 60}      ;forward patch
+#IfWinActive Mini V3 		  ; If Mini V3 is active 
+LEFT:: send {click, 730, 60}      ; left arrow key press moves the mouse to x,y coords and left clicks once - back patch
+right::send {click, 780, 60}      ; right arrow key press moves the mouse to the x,y coord and left clicks once - forward patch
 #IfWinActive 
 
-#IfWinActive CS-80 V3 ;
-LEFT:: send {click, 730, 60}      ; back patch
-right::send {click, 780, 60}      ; forward patch
-#IfWinActive 
-
-#IfWinActive Farfisa V ;
+#IfWinActive CS-80 V3 		  ; If CS-80 V3 is active window
 LEFT:: send {click, 730, 60}      ; back patch
 right::send {click, 780, 60}      ; forward patch
 #IfWinActive 
 
+#IfWinActive Farfisa V 		  ; If Farfisa V is active window
+LEFT:: send {click, 730, 60}      ; back patch
+right::send {click, 780, 60}      ; forward patch
+#IfWinActive 
 
-
+;------------------End Method 1 -----------------------------
 
 
 ; ----------------------------------- Method 2 -------------------------------------------
