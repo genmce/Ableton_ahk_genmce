@@ -1,5 +1,5 @@
 /*
-	This method created by Author: Nathan McCallum (1vasari)
+	This method attributed to Author: Nathan McCallum (1vasari)
 	It is modified - I like the browser open and I have used different keys to use ` + letter to trigger insert plugin.
 	I also removed the return to focus portion
 	This will NOT run stand-alone
