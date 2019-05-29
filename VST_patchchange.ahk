@@ -1,17 +1,9 @@
-; Written by genmce - see license
-#SingleInstance, force
-#NoEnv          ; Recommended for performance and compatibility with future AutoHotkey releases.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetTitleMatchMode, fast
-SetTitleMatchMode, 2
-return
-
 /*
   This script contains two methods for changing vst presets/patches.
   The point is to be able to quickly audition presets.
   The plugin MUST have buttons to change presets.
   
-  This script CAN be run by itself
+  This script CANNOT be run by itself
   If you wish to use these in your script, copy the method after autoexec section of ahk file.
   
   Both methods require the vst gui to be open and active on forground. 
