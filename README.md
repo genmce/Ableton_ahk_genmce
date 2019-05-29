@@ -6,3 +6,7 @@ https://github.com/1vasari/Ableton.ahk
 
 These tricks will use some of his tricks and some new ones.
 There are separate files for each method.
+
+1. Set record quantize from hotkey
+2. VST_patchchange - two methods
+
