@@ -72,11 +72,11 @@ Right::patchChange(610, 55)
 
 ; you can keep on adding as many of these sections for as many plugins as you like - i have about 50, so far
 
-; =============== Patch Changing function ; ===============
+;----------- Patch Changing function -----------
 
-patchChange( x, y) 					        ; Function receives coordinates of patch button 
+patchChange( x, y) 			  ; Function receives coordinates of patch button 
 {
-	;msgbox   x%x% y%y% ;%vst%		    ; for testing - to show that correct values are making it to the function
+	;msgbox   x%x% y%y% ;%vst%	  ; for testing - to show that correct values are making it to the function
 	SetControlDelay, -1
 	ControlClick, x%x% y%y%,,,left,1, ; Sends a click to the button at coordinates
 	return
