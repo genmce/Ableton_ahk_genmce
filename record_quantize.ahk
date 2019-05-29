@@ -1,6 +1,4 @@
-
-
-; =============== automatic mouse clicks toolbar ;===============
+; =============== Click menu - set record quantize ;===============
 ; This opens the Edit menu, 
 ; clicks on record quantize
 ; clicks on 16th dotted triplet record quantize	
