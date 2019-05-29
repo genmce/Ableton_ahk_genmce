@@ -17,4 +17,3 @@
 		send, {enter} 	; reenable for automatic selection		;
 		return
 	}
-
