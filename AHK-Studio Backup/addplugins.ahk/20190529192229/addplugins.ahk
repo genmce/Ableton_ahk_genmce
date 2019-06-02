@@ -7,22 +7,22 @@
 
 #IfWinActive Ableton Live 			  ; Keys below ONLY works with Live is ACTIVE
 
-` & c::AddPlugin("Compressor")            ; hotkey passes Compressor to AddPlugin
+` & c::AddPlugin("Compressor")                    ; hotkey passes Compressor to AddPlugin
 ` & e::AddPlugin("EQ Eight")
 ` & g::AddPlugin("Guitar Rig 5")	
 ` & l::AddPlugin("Ping Pong Delay")
 ` & r::AddPlugin("Reverb")
-` & s::AddPlugin("@k_sustain hold 1.0")  ; you won't find this it is custom for me - use window spy to find title of plugin
+` & s::AddPlugin("@k_sustain hold 1.0") 	  ; you won't find this it is custom for me - use window spy to find title of plugin
 ` & t::AddPlugin("Tuner") 
 ` & U::AddPlugin("Utility")
 
 
 AddPlugin(plugin_name)  { 	; function called by hotkeys above to insert plugin
-	Send, ^f				; opens Live search text box
-	Send, %plugin_name%		; sends plugin_name to Live search text box
-	Sleep, 300 ;			; Sleep while the search query completes
-	Send, {Down}{Enter}		; puts plugin on selected track
-	;Send, ^!b 			; closes the browser - I like browser open
+	Send, ^f		; opens Live search text box
+	Send, %plugin_name%	; sends plugin_name to Live search text box
+	Sleep, 300 ;		; Sleep while the search query completes
+	Send, {Down}{Enter}	; puts plugin on selected track
+	;Send, ^!b 		; closes the browser - I like browser open
 	return
 }
 

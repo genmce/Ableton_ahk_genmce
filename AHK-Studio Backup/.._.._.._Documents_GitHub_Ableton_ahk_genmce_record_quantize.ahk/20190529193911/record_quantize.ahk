@@ -6,7 +6,6 @@ SetTitleMatchMode, fast
 SetTitleMatchMode, 2
 return
 
-
 /*
 	This is a working script - it should run and only do the one example below
 */
