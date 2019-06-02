@@ -1,17 +1,8 @@
+
 ; Written by genmce - see license
-#SingleInstance, force
-#NoEnv          ; Recommended for performance and compatibility with future AutoHotkey releases.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
-SetTitleMatchMode, fast
-SetTitleMatchMode, 2
-return
-
-
-/*
-	This is a working script - it should run and only do the one example below
-*/
 
 ; =============== Click menu - set record quantize ;===============
+; copy code to your script
 ; This opens the Edit menu, 
 ; clicks on record quantize
 ; clicks on 16th dotted triplet record quantize	
